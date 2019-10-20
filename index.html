@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Crystal Game</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Manjari|Sanchez&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../unit-4-game/assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../unit-4-game/assets/css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>C R Y S T A L &nbsp; &nbsp; C O L L E C T O R</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>H O W &nbsp; &nbsp; T O &nbsp; &nbsp; P L A Y:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 rules">
+                <p>A random target number will be given at the start of the game.</p>
+                <p>Click on one of the four crystals being shown to add to your score.</p>
+                <p>Values of the crystals won't be known until the crystal has been clicked on.</p>
+            </div>
+            <div class="col-md-6 rules">
+                <p>Match your score with the random target number given at the start to win.</p>
+                <p>If your score goes over the random target number, you lose.</p>
+                <p>Values of the crystals will change when the game is restarted.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 targetNumber"><h3>T A R G E T &nbsp;# : <span id="number-to-guess"></span></h3></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3 userNumber"><h3>S C O R E &nbsp;# : <span id="score"></span></h3></div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 crystal-box">
+                <div id="crystals" class="crystal-buttons">
+                        <!-- crystal buttons go here -->
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 score"><h3>W I N S :  <span id="wins"></span></h3></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 score"><h3>L O S S E S : <span id="losses"></span></h3></div>
+        </div>
+    </div>
+
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <script type="text/javascript" src="../unit-4-game/assets/js/game.js"></script>
+</body>
+</html>
